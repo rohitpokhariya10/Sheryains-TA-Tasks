@@ -272,7 +272,7 @@ contracts.
 
 | Area | What changed | Why |
 | --- | --- | --- |
-| Theme tokens | Added `--ink`, `--paper`, `--emerald`, `--coral`, `--signal`, `--ink-60`, IBM Plex font roles, and subtle grain texture. | Establishes a distinct visual system instead of default WhatsApp green/white. |
+| Theme tokens | Added `--ink`, `--paper`, `--emerald`, `--coral`, `--signal`, `--ink-60`, premium Manrope / Space Grotesk / JetBrains Mono font roles, and subtle grain texture. | Establishes a distinct visual system instead of default WhatsApp green/white. |
 | Motion system | Added `shared/ui/motion/motionVariants.js` with reusable Framer Motion variants. | Keeps spring/fade/menu/drawer motion consistent and centralized. |
 | Sidebar | Added status rings, pinned/recent sections, archived collapse, staggered list entrance, and presence rails on rows. | Improves scanability and gives online state an ambient signature. |
 | Chat window | Added call/video/menu actions, `aria-live="polite"` message stream, and a right-side contact/group info drawer. | Moves toward a classic three-pane messaging workspace without changing data flow. |
