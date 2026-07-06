@@ -1,0 +1,140 @@
+.item {
+  width: 100%;
+  min-height: 78px;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+  transition:
+    background 0.16s ease,
+    border-color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.rail {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(180deg, var(--emerald), var(--signal));
+  opacity: 0.22;
+}
+
+.online .rail {
+  opacity: 0.9;
+  box-shadow: 0 0 16px rgba(28, 107, 74, 0.34);
+  animation: presence-breathe 4s ease-in-out infinite;
+}
+
+.item:hover .rail {
+  opacity: 1;
+  box-shadow: 0 0 22px rgba(28, 107, 74, 0.42);
+}
+
+.item:hover {
+  background: var(--color-surface-hover);
+}
+
+.item:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.itemActive {
+  background: var(--color-brand-soft);
+  border-color: rgba(15, 159, 110, 0.25);
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.topRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.name {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: var(--font-condensed);
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time {
+  flex-shrink: 0;
+  color: var(--color-text-soft);
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.bottomRow {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.preview {
+  min-width: 0;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge {
+  flex-shrink: 0;
+  height: 24px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-brand-strong);
+  background: #ffffff;
+  border: 1px solid rgba(15, 159, 110, 0.2);
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 800;
+  font-family: var(--font-condensed);
+}
+
+@keyframes presence-breathe {
+  0%,
+  100% {
+    opacity: 0.58;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .online .rail {
+    animation: none;
+  }
+}

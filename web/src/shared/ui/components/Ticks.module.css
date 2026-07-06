@@ -1,0 +1,44 @@
+.wrap {
+  width: 21px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--ink-60);
+}
+
+.read {
+  color: var(--signal);
+}
+
+.svg {
+  width: 19px;
+  height: 15px;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ripple {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--signal) 26%, transparent);
+}
+
+.clock {
+  color: var(--ink-60);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  line-height: 1;
+}

@@ -1,0 +1,45 @@
+.mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: var(--color-text);
+}
+
+.compact {
+  gap: 0;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(16, 24, 40, 0.18), transparent),
+    var(--color-brand);
+  box-shadow: var(--shadow-action);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.1;
+}
+
+.copy strong {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.copy small {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
