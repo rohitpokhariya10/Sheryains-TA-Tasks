@@ -1,6 +1,6 @@
 .button {
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -53,8 +53,9 @@
 }
 
 .muted {
-  background: var(--color-surface-subtle);
+  background: rgba(255, 255, 255, 0.74);
   border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
 }
 
 .muted:hover {
@@ -77,4 +78,5 @@
 .danger:hover {
   background: var(--color-danger-soft);
   color: var(--color-danger);
+  border-color: rgba(220, 95, 80, 0.2);
 }

@@ -2,9 +2,11 @@
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  background: var(--color-border);
+  background: var(--color-surface-subtle);
   border: 1px solid rgba(255, 255, 255, 0.86);
-  box-shadow: 0 0 0 1px var(--color-border);
+  box-shadow:
+    0 0 0 1px var(--color-border),
+    0 6px 14px rgba(17, 28, 24, 0.08);
 }
 
 .placeholder {
@@ -15,9 +17,11 @@
   justify-content: center;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.22), transparent),
-    #2f6f6a;
+    linear-gradient(135deg, var(--color-brand), var(--color-accent));
   color: #fff;
   font-weight: 800;
   border: 1px solid rgba(255, 255, 255, 0.86);
-  box-shadow: 0 0 0 1px var(--color-border);
+  box-shadow:
+    0 0 0 1px var(--color-border),
+    0 6px 14px rgba(17, 28, 24, 0.08);
 }

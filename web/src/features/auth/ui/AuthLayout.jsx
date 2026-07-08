@@ -14,6 +14,19 @@ export function AuthLayout({
     <main className={styles.wrap}>
       <section className={styles.contextPanel}>
         <ProductMark />
+        <div className={styles.previewFrame} aria-hidden="true">
+          <span className={styles.previewTop} />
+          <span className={styles.previewRow}>
+            <span className={styles.previewAvatar} />
+            <span className={styles.previewLines}>
+              <span />
+              <span />
+            </span>
+          </span>
+          <span className={styles.previewBubble} />
+          <span className={`${styles.previewBubble} ${styles.previewBubbleOut}`} />
+          <span className={styles.previewComposer} />
+        </div>
       </section>
 
       <section className={styles.formPanel}>

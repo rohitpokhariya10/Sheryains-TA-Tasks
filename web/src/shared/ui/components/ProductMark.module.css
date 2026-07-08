@@ -11,15 +11,15 @@
 }
 
 .icon {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   background:
-    linear-gradient(135deg, rgba(16, 24, 40, 0.18), transparent),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent),
     var(--color-brand);
   box-shadow: var(--shadow-action);
 }
@@ -34,12 +34,14 @@
 .copy strong {
   font-size: 18px;
   font-weight: 800;
+  font-family: var(--font-condensed);
   color: var(--color-text);
 }
 
 .copy small {
   margin-top: 4px;
   font-size: 12px;
+  font-weight: 600;
   color: var(--color-text-muted);
   white-space: nowrap;
 }
